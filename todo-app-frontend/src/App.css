@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #218838;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.task h2 {
+  margin: 0 0 10px 0;
+}
+
+.task button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task button:first-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.task button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+.task button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+.task button:last-of-type:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .task-form {
+    gap: 5px;
+  }
+
+  .task-form input,
+  .task-form textarea,
+  .task-form select {
+    padding: 8px;
+  }
+
+  .task-form button {
+    padding: 8px;
+  }
+
+  .task h2 {
+    font-size: 18px;
+  }
+}

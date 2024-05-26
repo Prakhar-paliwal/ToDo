@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Task Form */
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .task-form label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-form input, .task-form textarea, .task-form select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-form button {
+    align-self: flex-start;
+  }
+  
+  .task-form button:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .task-form button:last-of-type {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .task-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-list li button {
+      margin: 5px 0;
+    }
+  
+    .task-form label {
+      flex-direction: column;
+    }
+  
+    .task-form input, .task-form textarea, .task-form select {
+      width: 100%;
+    }
+  }
+  
